@@ -1,0 +1,8 @@
+filebeat.inputs:
+  - type: log
+    paths:
+      - "/var/log/httpd/apache_access"
+output.logstash:
+  hosts: ["logstash:5044"]
+setup.ilm.enabled: false
+setup.template.enabled: false
